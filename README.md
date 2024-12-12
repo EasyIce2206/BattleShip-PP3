@@ -1,32 +1,51 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+## Battleships Game
 
-Welcome,
+Welcome to the Battleships Game! This is a Python command-line game where you can play the classic game of Battleships against the computer.
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **May 14, 2024**
+### How to Play
 
-## Reminders
+- The game is played on a 5x5 grid.
+- You and the computer will take turns to guess the location of each other's ships.
+- The first player to sink all of the opponent's ships wins the game.
 
-- Your code must be placed in the `run.py` file
-- Your dependencies must be placed in the `requirements.txt` file
-- Do not edit any of the other files or your code may not deploy properly
+### Features
 
-## Creating the Heroku app
+- Randomly placed ships for both player and computer.
+- Input validation to ensure valid moves.
+- Clear and concise game messages to guide the player.
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
+### Installation
 
-1. `heroku/python`
-2. `heroku/nodejs`
+1. Clone the repository to your local machine:
+    ```bash
+    git clone https://github.com/yourusername/battleships-game.git
+    ```
+2. Navigate to the project directory:
+    ```bash
+    cd battleships-game
+    ```
+3. Install the required dependencies:
+    ```bash
+    pip install -r requirements.txt
+    ```
 
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
+### Running the Game
 
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
+To start the game, run the following command:
+```bash
+python run.py
+```
 
-Connect your GitHub repository and deploy as normal.
+### Deployment on Heroku
 
-## Constraints
+To deploy the Battleships Game on Heroku, follow these steps:
 
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
+1. Create a new Heroku app.
+2. Add the following buildpacks in this order:
+    1. `heroku/python`
+    2. `heroku/nodejs`
+3. Create a Config Var called `PORT` and set it to `8000`.
+4. Connect your GitHub repository to the Heroku app.
+5. Deploy the app.
 
----
-
-Happy coding!
+Enjoy playing Battleships!
